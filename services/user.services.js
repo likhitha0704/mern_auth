@@ -6,8 +6,8 @@ class UserService{
         return newUser;
     }
 
-    async findUserById(req){
-        let {id}=req.params;
+    async findUserById(id){
+        // let {id}=req.params;
         let existingUser=await User.findById(id);
         return existingUser;
     }
